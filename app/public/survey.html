@@ -157,7 +157,7 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="api/friends">API Friends List</a> | <a href="https://github.com/chelsea4crooke/FriendFinder">GitHub Repo</a></p>
+        <p><a href="../data/friends.js">API Friends List</a> | <a href="https://github.com/chelsea4crooke/FriendFinder">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -237,7 +237,7 @@
                     $("#quest10").val()
                 ]
             };
-            $.post("api/friends", userData, function(data){
+            $.post("../data/friends.js", userData, function(data){
                 $("#match-name").text(data.name);
                 $("#match-img").attr("src", data.photo);
 
