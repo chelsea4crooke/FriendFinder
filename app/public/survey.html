@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <h4><strong>About You</strong></h4>
+        <h4> Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <hr>
+        <h4>Link to Photo Image(Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+
+        <h3><strong>Question 1:</strong></h3>
+        <h4>Your are always hankering to learn more.</h4>
+        <select class="chosen-select" id="quest1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 2:</strong></h3>
+        <h4>You have a intense fear of spiders and look to escape intimidating situations.</h4>
+        <select class="chosen-select" id="quest2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 3:</strong></h3>
+        <h4>You easily harbor a grudge or dislike towards certain things or people.</h4>
+        <select class="chosen-select" id="quest3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 4:</strong></h3>
+        <h4>You love to play with your style, sometimes on a daily basis.</h4>
+        <select class="chosen-select" id="quest4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 5:</strong></h3>
+        <h4>You are a night owl.</h4>
+        <select class="chosen-select" id="quest5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 6:</strong></h3>
+        <h4>You find yourself daydreaming and planning often.</h4>
+        <select class="chosen-select" id="quest6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 7:</strong></h3>
+        <h4>You are loyal to your friends.</h4>
+        <select class="chosen-select" id="quest7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 8:</strong></h3>
+        <h4>Often you find yourself feeling better than other, maybe like a superiority complex.</h4>
+        <select class="chosen-select" id="quest8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 9:</strong></h3>
+        <h4>Courageous is a trait people often use to describe you. </h4>
+        <select class="chosen-select" id="quest9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 10:</strong></h3>
+        <h4>You pride yourself on remaining calm and levelheaded in challenging situations. </h4>
+        <select class="chosen-select" id="quest10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4
+            </option>
+            <option value="5">5 (strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+    </div>
+
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Best Match:</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="https://cnet1.cbsistatic.com/img/6W8eoNS0D_OSZk2htL-Ps1GEr1o=/2019/12/14/1387f7f7-6cbe-4a14-a9a7-e9f4c9741b65/baby-yoda-news-door-cb-1.jpg" alt= "">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var config = {
+        ".chosen-select": {},
+        ".chosen-select-deselect": {
+            allow_single_deselect: true
+        },
+        ".chosen-select-no-single": {
+            disable_search_threshold: 10
+        },
+        ".chosen-select-no-result": {
+            no_results_text: "Oops, notta thing found"
+        },
+        ".chosen-select-width": {
+            width: "90%"
+        }
+    };
+
+    for (var selector in config){
+        $(selector).chosen(config[selector]);
+    }
+
+    $("#submit").on("click", function(event){
+        event.preventDefault();
+
+        function validateForm(){
+            var isValid = true;
+            $(".form-control").each(function(){
+                if ($(this).val() === ""){
+                    isValid = false;
+                }
+            });
+            $(".chosen-select").each(function (){
+                if($(this).val() === ""){
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
+        if(validateForm()){
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#quest1").val(),
+                    $("#quest2").val(),
+                    $("#quest3").val(),
+                    $("#quest4").val(),
+                    $("#quest5").val(),
+                    $("#quest6").val(),
+                    $("#quest7").val(),
+                    $("#quest8").val(),
+                    $("#quest9").val(),
+                    $("#quest10").val()
+                ]
+            };
+            $.post("../data/friends.js", userData, function(data){
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src", data.photo);
+
+                $("#results-modal").modal("toggle");
+            });
+        } else{
+            alert("Please fill out all fields before submitting");
+        }
+    });
+        </script>
+    </body>
+</html>
