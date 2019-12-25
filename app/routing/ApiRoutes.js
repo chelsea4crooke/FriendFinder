@@ -1,8 +1,8 @@
 var friends = require("../data/friends");
 
 module.exports = function(app){
-    app.get("../data/friends.js", function(_req, res){
-        res.sendFile(path.join(__dirname, "../data/friends.js"));
+    app.get("/api/friends", function(_req, res){
+        res.json(friends);
     });
 
     app.post("../data/friends.js", function(req, res){

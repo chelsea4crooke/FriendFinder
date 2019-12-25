@@ -154,6 +154,15 @@
 
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
     </div>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="api/friends">API Friends List</a> | <a href="https://github.com/chelsea4crooke/FriendFinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
 
     <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -228,7 +237,7 @@
                     $("#quest10").val()
                 ]
             };
-            $.post("../data/friends.js", userData, function(data){
+            $.post("api/friends", userData, function(data){
                 $("#match-name").text(data.name);
                 $("#match-img").attr("src", data.photo);
 
