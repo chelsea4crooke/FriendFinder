@@ -8,6 +8,7 @@
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
@@ -17,22 +18,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
+  <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="container">
-        <h1>Survey Questions</h1>
+    <div class="container" style="text-align: center; font-family: 'Ma Shan Zheng', cursive;">
+        <h1 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;">Survey Questions</h1>
         <hr>
-        <h4><strong>About You</strong></h4>
-        <h4> Name (Required)</h4>
-        <input type="text" id="name" class="form-control" required>
+        <h4 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>About You</strong></h4>
+        <h4 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"> Name (Required)</h4>
+        <input type="text" id="name" class="form-control" style="background-color; #daddd8" required>
         <hr>
-        <h4>Link to Photo Image(Required)</h4>
-        <input type="text" id="photo" class="form-control" required>
+        <h4 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;">Link to Photo Image(Required)</h4>
+        <input type="text" id="photo" class="form-control" style="background-color; #daddd8" required>
         <hr>
 
-        <h3><strong>Question 1:</strong></h3>
-        <h4>Your are always hankering to learn more.</h4>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#1: Your are always hankering to learn more.</strong></h3>
         <select class="chosen-select" id="quest1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -41,9 +43,8 @@
             <option value="4">4</option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 2:</strong></h3>
-        <h4>You have a intense fear of spiders and look to escape intimidating situations.</h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#2: You have a intense fear of spiders and look to escape intimidating situations.</strong></h3>
         <select class="chosen-select" id="quest2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -53,9 +54,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 3:</strong></h3>
-        <h4>You easily harbor a grudge or dislike towards certain things or people.</h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#3: You easily harbor a grudge or dislike towards certain things or people.</strong></h3>
         <select class="chosen-select" id="quest3">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -65,9 +65,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 4:</strong></h3>
-        <h4>You love to play with your style, sometimes on a daily basis.</h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#4: You love to play with your style, sometimes on a daily basis.</strong></h3>
         <select class="chosen-select" id="quest4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -77,9 +76,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 5:</strong></h3>
-        <h4>You are a night owl.</h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#5: You are a night owl.</strong></h3>
         <select class="chosen-select" id="quest5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -89,9 +87,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 6:</strong></h3>
-        <h4>You find yourself daydreaming and planning often.</h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#6: You find yourself daydreaming and planning often.</strong></h3>
         <select class="chosen-select" id="quest6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -101,9 +98,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 7:</strong></h3>
-        <h4>You are loyal to your friends.</h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#7: You are loyal to your friends.</strong></h3>
         <select class="chosen-select" id="quest7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -113,9 +109,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 8:</strong></h3>
-        <h4>Often you find yourself feeling better than other, maybe like a superiority complex.</h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;;"><strong>#8: Often you find yourself feeling better than others, maybe like a superiority complex.</strong></h3>
         <select class="chosen-select" id="quest8">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -125,9 +120,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 9:</strong></h3>
-        <h4>Courageous is a trait people often use to describe you. </h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#9: Courageous is a trait people often use to describe you.</strong></h3>
         <select class="chosen-select" id="quest9">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -137,9 +131,8 @@
             </option>
             <option value="5">5 (strongly Agree)</option>
         </select>
-
-        <h3><strong>Question 10:</strong></h3>
-        <h4>You pride yourself on remaining calm and levelheaded in challenging situations. </h4>
+        <hr>
+        <h3 style= "background-color: #FC7753; opacity: .8; color: #2A3D45;"><strong>#10: You pride yourself on remaining calm and levelheaded in challenging situations.</strong></h3>
         <select class="chosen-select" id="quest10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -152,12 +145,12 @@
         <br>
         <br>
 
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+        <button type="submit" class="btn btn-lg btn-block" style="background-color:#FC7753; opacity: .8; color: #2A3D45; border: #DADDD8;" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
     </div>
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="../data/friends.js">API Friends List</a> | <a href="https://github.com/chelsea4crooke/FriendFinder">GitHub Repo</a></p>
+        <p><a href="../data/friends.js" style="color: #2A3D45; background-color: #DADDD8;">API Friends List</a> | <a href="https://github.com/chelsea4crooke/FriendFinder" style="color: #2A3D45; background-color:#DADDD8;">GitHub Repo</a></p>
       </div>
     </footer>
 
