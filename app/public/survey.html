@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="container" style="text-align: center; font-family: 'Ma Shan Zheng', cursive;">
+    <div class="container" style="text-align: center;">
         <h1 style= "background-color: #FC7753; opacity: .9; color: #2A3D45;">Survey Questions</h1>
         <hr>
         <h4 style= "background-color: #FC7753; opacity: .9; color: #2A3D45;"><strong>About You</strong></h4>
@@ -150,14 +150,14 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="../data/friends.js" style="color: #2A3D45; background-color: #DADDD8;">API Friends List</a> | <a href="https://github.com/chelsea4crooke/FriendFinder" style="color: #2A3D45; background-color:#DADDD8;">GitHub Repo</a></p>
+        <p><a href="/api/friends" style="color: #2A3D45; background-color: #DADDD8;">API Friends List</a></p>
       </div>
     </footer>
 
   </div>
 
 
-    <div id="results-modal" class="modal fade" role="dialog">
+    <div id="resultsModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <div class="modal-content">
@@ -166,48 +166,47 @@
                     <h2 class="modal-title"><strong>Best Match:</strong></h2>
                 </div>
                 <div class="modal-body">
-                    <h2 id="match-name"></h2>
-                    <img id="match-img" src="https://cnet1.cbsistatic.com/img/6W8eoNS0D_OSZk2htL-Ps1GEr1o=/2019/12/14/1387f7f7-6cbe-4a14-a9a7-e9f4c9741b65/baby-yoda-news-door-cb-1.jpg" alt= "">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://cnet1.cbsistatic.com/img/6W8eoNS0D_OSZk2htL-Ps1GEr1o=/2019/12/14/1387f7f7-6cbe-4a14-a9a7-e9f4c9741b65/baby-yoda-news-door-cb-1.jpg" alt= "">
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button class="btn btn-default" tyle="background-color:#FC7753; opacity: .9; color: #2A3D45; border: #DADDD8;" data-dismiss="modal" id="closeBtn">Close</button>
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript">
-    var config = {
-        ".chosen-select": {},
-        ".chosen-select-deselect": {
-            allow_single_deselect: true
-        },
-        ".chosen-select-no-single": {
-            disable_search_threshold: 10
-        },
-        ".chosen-select-no-result": {
-            no_results_text: "Oops, notta thing found"
-        },
-        ".chosen-select-width": {
-            width: "90%"
-        }
+      var config = {
+      ".chosen-select": {},
+      ".chosen-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".chosen-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".chosen-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+      },
+      ".chosen-select-width": {
+        width: "95%"
+      }
     };
 
     for (var selector in config){
         $(selector).chosen(config[selector]);
     }
-
-    $("#submit").on("click", function(event){
+    $("#submit").on("click", function(){
         event.preventDefault();
 
         function validateForm(){
             var isValid = true;
             $(".form-control").each(function(){
-                if ($(this).val() === ""){
+                if ($(this).val() === " "){
                     isValid = false;
                 }
             });
             $(".chosen-select").each(function (){
-                if($(this).val() === ""){
+                if($(this).val() === " "){
                     isValid = false;
                 }
             });
@@ -215,7 +214,7 @@
         }
         if(validateForm()){
             var userData = {
-                name: $("#name").val(),
+            name: $("#name").val(),
                 photo: $("#photo").val(),
                 scores: [
                     $("#quest1").val(),
@@ -230,16 +229,16 @@
                     $("#quest10").val()
                 ]
             };
-            $.post("../data/friends.js", userData, function(data){
-                $("#match-name").text(data.name);
-                $("#match-img").attr("src", data.photo);
-
-                $("#results-modal").modal("toggle");
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends" , userData, function(data){
+                $("#resultsModal").modal("toggle");
+                $("#matchName").text(data.name);
+                $("#matchImg").attr("src", data.photo);
             });
         } else{
             alert("Please fill out all fields before submitting");
         }
     });
-        </script>
-    </body>
+  </script>
+ </body>
 </html>
