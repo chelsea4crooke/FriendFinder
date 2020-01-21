@@ -224,7 +224,7 @@
                 ]
             };
             var currentURL = window.location.origin;
-
+            
             $.post(currentURL + "/api/friends" , userData, function(data){
                 $("#matchName").text(data.name);
                 $("#matchImg").attr("src", data.photo);
