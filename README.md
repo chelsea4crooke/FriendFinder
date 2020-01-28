@@ -14,6 +14,12 @@ In this app, a compatibility-based "Friend Finder" applicationwas built. This fu
 ##### ***Summary***
 This is a survey style dating app for fictional characters.
 
+##### Photos:
+<img src="./app/public/img/home.png">
+<img src="./app/public/img/survery1.png">
+<img src="./app/public/img/survery2.png">
+<img src="./app/public/img/survery3.png">
+
 ### ***Deployed Link:***
 https://chelsea4crooke.github.io/FriendFinder/
 
